@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --darkblue:rgb(1, 1, 119);
+    --darkpurple: rgb(51, 2, 94);
+}
