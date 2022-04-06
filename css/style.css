@@ -3,6 +3,22 @@
     padding: 0;
 }
 :root {
-    --darkblue:rgb(1, 1, 119);
+    --lightblue:rgb(9, 113, 198);
     --darkpurple: rgb(51, 2, 94);
+}
+
+body {
+    background-image: url(../img/noaa-kcvlb727mn8-unsplash.jpg);
+    background-size: 100%;
+}
+
+header h1 {
+    background-color:var(--lightblue);
+    color:aliceblue;
+
+}
+
+div h4 {
+    background-color:var(--lightblue);
+    color:aliceblue;
 }
