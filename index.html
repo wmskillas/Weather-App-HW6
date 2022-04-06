@@ -9,17 +9,51 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <div class="container">
-        <header class="card">
+        <header class="card text-center">
             <h1>5 Day Forecast</h1>
         </header>
     </div>
     <div class="container row">
         <div class="col card-body text-center">
-
+            <div class="card" style="width: 18rem;">
+                <div class="card-body bg-light">
+                    <h6 class="card-subtitle mb-2">Search For A City</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control searchBar" placeholder="Enter City Name"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-primary searchBtn" type="button"
+                                id="button-addon2"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <ul class="list-forecast">
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <div class="col mt-4">
+        <div class="card currentDayCard pb-2 pt-1">
+            <h4 class="card-title mt-2 text-center">Current Forecast</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-4">
+            <div class="card pb-5 fiveDayCard pl-5">
+                <h4 class="card-title mt-2 text-center">5-Day Forecast</h4>
+                <div class="row">
+                    <div class="col fiveDayOne">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
 </body>
 </html>
