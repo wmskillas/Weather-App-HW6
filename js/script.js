@@ -61,7 +61,6 @@ $.ajax({
     method: "GET"
 }).then(function (response) {
     var days = [0, 8, 16, 24, 32];
-    var fiveDayCard = $(".fiveDayCard").addClass("card-body");
     var fiveDayDiv = $(".fiveDayOne").addClass("card-text");
     fiveDayDiv.empty();
     days.forEach(function (i) {
