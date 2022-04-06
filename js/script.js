@@ -54,17 +54,6 @@ searchBtn.click(function () {
             currentWeather.append("<p>" + "Wind Speed: " + response.wind.speed + "</p>");
             console.log(currentWeather);
 
-            var uvIndex = `https://api.openweathermap.org/data/2.5/uvi?appid=5520d3e2e17a442c43730b6e39f79be3&lat=${response.coord.lat}&lon=${response.coord.lon}`;
-
-            $.ajax({
-                url: uvIndex,
-                method: "GET"
-            }).then(function (response) {
-
-                var currentUV = currentWeather.append("<p>" + "UV Index: " + response.value + "</p>").addClass("card-text");
-                currentUV.addClass("UV");
-                currentWeather.append(currentUV);
-            });
 });
 
 $.ajax({
