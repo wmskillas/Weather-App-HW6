@@ -9,7 +9,8 @@
 
 body {
     background-image: url(../img/noaa-kcvlb727mn8-unsplash.jpg);
-    background-size: 100%;
+    background-size: 160%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header h1 {
